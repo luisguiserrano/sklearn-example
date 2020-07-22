@@ -23,8 +23,9 @@ spec:
         path: /app/main.py
         raw:
           data: |
-            from sklearn.utils import save_json 
-            from sklearn.functions import train_model
+            from skl.utils import save_json 
+            from skl.functions import train_model
+            import json
 
             model_name = {{inputs.parameters.model_name}}
 
