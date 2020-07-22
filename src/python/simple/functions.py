@@ -27,7 +27,3 @@ def train_model(model_name = "logistic_regression"):
     predictions = model.predict(features)
 
     return predictions, score
-
-p, s = training("logistic_regression")
-print(p)
-print(s)
