@@ -21,7 +21,8 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ),
     install_requires = [
-        "torch",
+        "sklearn",
+        "pandas",
         "numpy"
    ],
 )
