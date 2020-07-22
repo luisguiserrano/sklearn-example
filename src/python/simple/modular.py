@@ -37,12 +37,12 @@ def predict(model, features):
     predictions = model.predict(features)
     return predictions
 
-dataset = generate_dataset()
-features, labels = preprocess_data(dataset)
-model = return_model("decision_tree")
-model = train_model(model, features, labels)
-score = score_model(model, features, labels)
-predictions = predict(model, features)
+#dataset = generate_dataset()
+#features, labels = preprocess_data(dataset)
+#model = return_model("decision_tree")
+#model = train_model(model, features, labels)
+#score = score_model(model, features, labels)
+#predictions = predict(model, features)
 
-print("Score:", score)
-print("Predictions:", predictions)
+#print("Score:", score)
+#print("Predictions:", predictions)

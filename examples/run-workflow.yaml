@@ -3,34 +3,34 @@ ZapOSApiVersion: v1alpha1
 kind: Workflow
 
 resources:
-- name: sklearn-orquestra
+- name: simple-orquestra
   type: git
   parameters:
     url: "git@github.com:luisguiserrano/sklearn-example.git"
     branch: "master"
     
 metadata:
-  generateName: sklearn-orq-
+  generateName: simple-orq-
 
 spec:
 
-  entrypoint: sklearn-workflow
+  entrypoint: simple-workflow
 
   arguments:
     parameters:
     - s3-bucket: quantum-engine
-    - s3-key: mine/sklearn/
+    - s3-key: mine/simple/
 
   templates:
-  - name: sklearn-workflow
+  - name: simple-workflow
     steps:
-    - - name: train-sklearn-model
+    - - name: train-simple-model
         template: train-model
         arguments:
           parameters:
 
           - model_name: "logistic_regression"
 
-          - resources: [sklearn-orquestra]
+          - resources: [simple-orquestra]
           - docker-image: z-ml
           - docker-tag: latest

@@ -23,9 +23,9 @@ spec:
         path: /app/main.py
         raw:
           data: |
-            from skl.utils import save_json 
-            from skl.functions import train_model
             import json
+            from simple.utils import save_json 
+            from simple.functions import train_model
 
             model_name = {{inputs.parameters.model_name}}
 
