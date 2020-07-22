@@ -25,7 +25,7 @@ spec:
             from simple.utils import save_json 
             from simple.functions import train_model
 
-            predictions, score = train_model(model_name)
+            predictions, score = train_model()
             result = {}
             result["predictions"] = predictions
             result["score"] = score
