@@ -13,8 +13,6 @@ spec:
       - name: docker-tag
         value: latest
 
-      - name: model_name
-
       - name: command
         value: python3 main.py
 
@@ -26,8 +24,6 @@ spec:
             import json
             from simple.utils import save_json 
             from simple.functions import train_model
-
-            model_name = {{inputs.parameters.model_name}}
 
             predictions, score = train_model(model_name)
             result = {}

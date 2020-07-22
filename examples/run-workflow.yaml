@@ -29,8 +29,6 @@ spec:
         arguments:
           parameters:
 
-          - model_name: "logistic_regression"
-
           - resources: [simple-orquestra]
           - docker-image: z-ml
           - docker-tag: latest
