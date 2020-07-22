@@ -34,5 +34,3 @@ spec:
           - resources: [sklearn-orquestra]
           - docker-image: z-ml
           - docker-tag: latest
-          - resources: [xor-orquestra]
-
