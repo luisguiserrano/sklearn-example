@@ -1,0 +1,3 @@
+{
+"simple-orq-j44fn-3618796786": {"class":"train-model","id":"simple-orq-j44fn-3618796786","inputParam:command":"python3 main.py","inputParam:cpu":"1000m","inputParam:disk":"10Gi","inputParam:docker-image":"z-ml","inputParam:docker-registry":"zapatacomputing","inputParam:docker-tag":"latest","inputParam:memory":"1024Mi","result":{"id":"simple-orq-j44fn-3618796786/result","predictions":"[0, 0, 0, 1, 1, 1]","schema":"orquestra-v1-data","taskClass":"train-model","taskId":"simple-orq-j44fn-3618796786","workflowId":"simple-orq-j44fn"},"workflowId":"simple-orq-j44fn"}
+}
